@@ -93,6 +93,10 @@ input {
 /* =====================================================
 * COMPONENTS
 ======================================================== */
+.cardList {
+  flex: 1;
+  background-color: #F0F0F0; }
+
 .searchForm {
   margin: 0 auto; }
   @media all and (min-width: 768px) {
@@ -147,3 +151,7 @@ input {
 /* =====================================================
 * PAGES
 ======================================================== */
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }

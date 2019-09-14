@@ -1,10 +1,14 @@
 import React from "react";
+
+// Components
 import Header from "./components/header";
+import CardList from "./components/cardList";
 
 function App() {
   return (
-    <div>
+    <div className="mainPage">
       <Header withIcon={true} />
+      <CardList />
     </div>
   );
 }
