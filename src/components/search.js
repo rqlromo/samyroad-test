@@ -1,5 +1,6 @@
 // Dependencies
 import React from "react";
+import PropTypes from "prop-types";
 
 // icons
 import IconSearch from "../components/icons/iconSearch";
@@ -24,3 +25,7 @@ const Search = ({ withIcon }) => {
 };
 
 export default Search;
+
+Search.propTypes = {
+  withIcon: PropTypes.bool
+};

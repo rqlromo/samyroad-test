@@ -1,5 +1,6 @@
 // Dependencies
 import React from "react";
+import PropTypes from "prop-types";
 
 const iconSearch = ({ width, height, color }) => {
   return (
@@ -31,3 +32,9 @@ const iconSearch = ({ width, height, color }) => {
 };
 
 export default iconSearch;
+
+iconSearch.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  color: PropTypes.string
+};
