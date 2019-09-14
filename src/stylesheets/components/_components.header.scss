@@ -1,7 +1,21 @@
 .header {
   width: 100%;
-  height: 200px;
-  padding: 0 $sizeThirtySix;
+  height: 120px;
+  background-color: #fff;
   @include flex-row-vertically-centered;
   justify-content: space-between;
+
+  @media all and (min-width: 768px) {
+    padding: 0 80px;
+    height: 180px;
+  }
+}
+
+.header__logo {
+  display: none;
+
+  @media all and (min-width: 768px) {
+    display: block;
+    width: 100px;
+  }
 }

@@ -85,6 +85,12 @@ input {
 /* =====================================================
 * COMPONENTS
 ======================================================== */
+.searchForm {
+  margin: 0 auto; }
+  @media all and (min-width: 768px) {
+    .searchForm {
+      margin: initial; } }
+
 .searchForm__content {
   width: 250px;
   height: 24px;
@@ -99,11 +105,22 @@ input {
 
 .header {
   width: 100%;
-  height: 200px;
-  padding: 0 36px;
+  height: 120px;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media all and (min-width: 768px) {
+    .header {
+      padding: 0 80px;
+      height: 180px; } }
+
+.header__logo {
+  display: none; }
+  @media all and (min-width: 768px) {
+    .header__logo {
+      display: block;
+      width: 100px; } }
 
 .searchForm__input {
   width: 200px;

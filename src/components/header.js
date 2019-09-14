@@ -10,9 +10,7 @@ import logo from "../images/logo.png";
 const Header = () => {
   return (
     <div className="header">
-      <div className="header__logo">
-        <img src={logo} alt="company-logo" />
-      </div>
+      <img className="header__logo" src={logo} alt="company-logo" />
       <Search withIcon={true} />
     </div>
   );
