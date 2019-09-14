@@ -99,7 +99,7 @@ input {
   margin-bottom: 18px; }
   @media all and (min-width: 768px) {
     .card {
-      width: calc(50% - 18px); }
+      width: calc(50% - 9px); }
       .card:nth-child(even) {
         margin-left: 9px; }
       .card:nth-child(odd) {
