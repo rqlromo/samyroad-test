@@ -1,6 +1,9 @@
 // Dependencies
 import React from "react";
 
+// Components
+import Like from "../components/like";
+
 class Card extends React.Component {
   render() {
     return (
@@ -18,7 +21,7 @@ class Card extends React.Component {
             <span className="card__subtitle_light">by </span>underground
           </p>
         </div>
-        <div className="card__like"></div>
+        <Like />
       </div>
     );
   }

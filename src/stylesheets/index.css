@@ -191,6 +191,28 @@ input {
     line-height: 20px;
     color: #BFBFBF; }
 
+.like {
+  padding-top: 20px;
+  padding-right: 20px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.like__icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #bfbfbf;
+  border-radius: 50%;
+  margin-bottom: 4px; }
+
+.like__counter {
+  color: white;
+  text-align: center; }
+
 /* =====================================================
 *OBJECTS
 ======================================================== */
