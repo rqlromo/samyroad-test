@@ -1,11 +1,12 @@
 .searchForm__input {
-  width: 200px;
-  height: $sizeTwentyFour;
+  width: 240px;
+  height: $sizeThirty;
   background-color: transparent;
-  border-radius: $sizeTwelve;
+  color: $greyDark;
 
   &::placeholder {
-    font-size: $sizeFourteen;
+    font-size: $sizeSixteen;
+    line-height: $sizeTwenty;
     color: $greySoft;
   }
 }

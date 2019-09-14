@@ -11,7 +11,7 @@ const Search = ({ withIcon }) => {
       <div className="searchForm__content">
         {withIcon && (
           <div className="searchForm__icon">
-            <IconSearch width="16" height="16" />
+            <IconSearch width="17" height="19" />
           </div>
         )}
         <input

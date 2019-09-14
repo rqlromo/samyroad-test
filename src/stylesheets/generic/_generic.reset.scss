@@ -11,7 +11,17 @@
    box-sizing: border-box;
  }
  
+  /**
+  * Remove outline on focused element 
+  */
  
+  * 
+  *:focus,
+  *:active{
+    outline: 0 !important;
+  } 
+
+
  body,
  h1, h2, h3, h4, h5, h6,
  blockquote, p, pre,

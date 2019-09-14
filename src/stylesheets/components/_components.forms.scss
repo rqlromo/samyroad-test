@@ -7,14 +7,15 @@
 }
 
 .searchForm__content {
-  width: 250px;
-  height: $sizeTwentyFour;
+  width: 270px;
+  height: $sizeThirty;
   background-color: $greyBasic;
-  border-radius: $sizeTwelve;
+  border-radius: 15px;
   @include flex-row-vertically-centered;
+  padding-right: $sizeSixteen;
 }
 
 .searchForm__icon {
-  height: $sizeSixteen;
-  margin: 0 $sizeTwelve 0 $sizeEight;
+  height: 19px;
+  margin: 0 $sizeFourteen 0 $sizeTen;
 }
