@@ -1,10 +1,10 @@
 import React from "react";
-import Search from "./components/search";
+import Header from "./components/header";
 
 function App() {
   return (
     <div>
-      <Search withIcon={true} />
+      <Header withIcon={true} />
     </div>
   );
 }
