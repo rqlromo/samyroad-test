@@ -9,10 +9,10 @@ import logo from "../images/logo.png";
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <img className="header__logo" src={logo} alt="company-logo" />
       <Search withIcon={true} />
-    </div>
+    </header>
   );
 };
 
