@@ -85,6 +85,27 @@ input {
 /* =====================================================
 * COMPONENTS
 ======================================================== */
+.searchForm__content {
+  width: 250px;
+  height: 24px;
+  background-color: #F0F0F0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center; }
+
+.searchForm__icon {
+  height: 16px;
+  margin: 0 12px 0 8px; }
+
+.searchForm__input {
+  width: 200px;
+  height: 24px;
+  background-color: transparent;
+  border-radius: 12px; }
+  .searchForm__input::placeholder {
+    font-size: 14px;
+    color: #BFBFBF; }
+
 /* =====================================================
 *OBJECTS
 ======================================================== */

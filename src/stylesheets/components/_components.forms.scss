@@ -1,0 +1,12 @@
+.searchForm__content {
+  width: 250px;
+  height: $sizeTwentyFour;
+  background-color: $greyBasic;
+  border-radius: $sizeTwelve;
+  @include flex-row-vertically-centered;
+}
+
+.searchForm__icon {
+  height: $sizeSixteen;
+  margin: 0 $sizeTwelve 0 $sizeEight;
+}
