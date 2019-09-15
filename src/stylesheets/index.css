@@ -120,7 +120,8 @@ input {
 
 .card__title {
   font-size: 24px;
-  line-height: 30px; }
+  line-height: 30px;
+  text-transform: uppercase; }
 
 .card__subtitle {
   font-size: 14px;
