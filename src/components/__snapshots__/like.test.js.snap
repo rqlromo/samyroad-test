@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders properly 1`] = `
+exports[`Like renders properly 1`] = `
 <div
   className="like"
 >
   <div
-    className="like__icon"
+    className="like__icon liked"
   >
     <svg
       height="24px"
@@ -38,6 +38,8 @@ exports[`renders properly 1`] = `
   </div>
   <p
     className="like__counter"
-  />
+  >
+    4
+  </p>
 </div>
 `;
