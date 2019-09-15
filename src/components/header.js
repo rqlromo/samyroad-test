@@ -5,7 +5,7 @@ import React from "react";
 import Search from "../components/search";
 
 // images
-import logo from "../images/logo.png";
+import logo from "../images/logo.svg";
 
 const Header = () => {
   return (
