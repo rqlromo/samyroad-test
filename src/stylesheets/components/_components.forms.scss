@@ -1,7 +1,7 @@
 .searchForm {
   margin: 0 auto;
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 500px) {
     margin: initial;
   }
 }
@@ -12,10 +12,10 @@
   background-color: $greyBasic;
   border-radius: 15px;
   @include flex-row-vertically-centered;
-  padding-right: $sizeSixteen;
+  padding-right: $sizeFourteen;
 }
 
 .searchForm__icon {
   height: 19px;
-  margin: 0 $sizeFourteen 0 $sizeTen;
+  margin: 0 $sizeTwelve 0 $sizeTen;
 }

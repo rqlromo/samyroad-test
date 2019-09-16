@@ -14,21 +14,19 @@
  ************************************************************/
 
   $greyDark           : #3E3E40;
-  $greyMedium         : #787D7F;
-  $greySoft           : #BFBFBF;
-  $greyLight          : #DEE0E5;
-  $greyLighter        : #F5F5F7;
-  $greyBasic          : #F0F0F0;
-  $greyBasicLight     : #F7F7F7;
+  $greySoft           : #B6B6B4;
+  $greyBasic          : #F6F6F6;
 
 
+  $mint               : #83F3C6;
 
 /************************************************************
  * 2. #FONTS
  ************************************************************/
 
-
-
+ $fontOpenSansRegular: 'OpenSans-Regular', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ $fontOpenSansSemiBold: 'OpenSans-SemiBold', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ $fontOpenSansBold: 'OpenSans-Bold', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
 /************************************************************
  * 3. #SIZES

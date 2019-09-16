@@ -17,7 +17,7 @@ const iconLike = ({ width, height, color }) => {
       >
         <g
           id="thumbs-up-hand-symbol"
-          fill={color ? color : "#F0F0F0"}
+          fill={color ? color : "#FFF"}
           fillRule="nonzero"
         >
           <path

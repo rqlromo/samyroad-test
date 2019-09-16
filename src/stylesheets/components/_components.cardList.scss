@@ -3,8 +3,11 @@
   background-color: $greyBasic;
   padding: 24px 24px 6px;
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 600px) {
     padding: 40px 40px 22px;
+  }
+
+  @media all and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }

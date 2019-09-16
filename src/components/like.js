@@ -1,21 +1,29 @@
 // Dependencies
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 // icons
 import IconLike from "../components/icons/iconLike";
 
-const Card = ({ likesCount }) => (
-  <div className="like">
-    <div className="like__icon">
-      <IconLike />
+const Like = ({ likesCount, liked }) => {
+  const [like, setLike] = useState(liked);
+
+  return (
+    <div className="like">
+      <div
+        className={`like__icon ${like ? "like__icon_liked" : ""}`}
+        onClick={() => setLike(!like)}
+      >
+        <IconLike />
+      </div>
+      <p className="like__counter">{like ? likesCount + 1 : likesCount}</p>
     </div>
-    <p className="like__counter">{likesCount}</p>
-  </div>
-);
+  );
+};
 
-export default Card;
+export default Like;
 
-Card.propTypes = {
-  item: PropTypes.number
+Like.propTypes = {
+  likesCount: PropTypes.number,
+  liked: PropTypes.bool
 };

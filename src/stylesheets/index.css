@@ -105,6 +105,11 @@ input {
       .card:nth-child(odd) {
         margin-right: 9px; } }
 
+.card__content {
+  transition: all 500ms ease-out; }
+  .card__content:hover {
+    filter: grayscale(100%); }
+
 .card__image {
   display: block;
   width: 100%; }
@@ -121,22 +126,25 @@ input {
 .card__title {
   font-size: 24px;
   line-height: 30px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "OpenSans-SemiBold", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
 
 .card__subtitle {
   font-size: 14px;
   line-height: 16px; }
 
 .card__subtitle_light {
-  color: #BFBFBF; }
+  color: #B6B6B4; }
 
 .cardList {
   flex: 1;
-  background-color: #F0F0F0;
+  background-color: #F6F6F6;
   padding: 24px 24px 6px; }
+  @media all and (min-width: 600px) {
+    .cardList {
+      padding: 40px 40px 22px; } }
   @media all and (min-width: 768px) {
     .cardList {
-      padding: 40px 40px 22px;
       display: flex;
       flex-wrap: wrap; } }
   @media all and (min-width: 1024px) {
@@ -146,22 +154,22 @@ input {
 
 .searchForm {
   margin: 0 auto; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 500px) {
     .searchForm {
       margin: initial; } }
 
 .searchForm__content {
   width: 270px;
   height: 30px;
-  background-color: #F0F0F0;
+  background-color: #F6F6F6;
   border-radius: 15px;
   display: flex;
   align-items: center;
-  padding-right: 16px; }
+  padding-right: 14px; }
 
 .searchForm__icon {
   height: 19px;
-  margin: 0 14px 0 10px; }
+  margin: 0 12px 0 10px; }
 
 .header {
   width: 100%;
@@ -170,14 +178,17 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media all and (min-width: 500px) {
+    .header {
+      padding: 0 30px;
+      height: 180px; } }
   @media all and (min-width: 768px) {
     .header {
-      padding: 0 80px;
-      height: 180px; } }
+      padding: 0 80px; } }
 
 .header__logo {
   display: none; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 500px) {
     .header__logo {
       display: block;
       width: 100px; } }
@@ -186,11 +197,12 @@ input {
   width: 240px;
   height: 30px;
   background-color: transparent;
-  color: #3E3E40; }
+  color: #3E3E40;
+  font-size: 16px; }
   .searchForm__input::placeholder {
     font-size: 16px;
     line-height: 20px;
-    color: #BFBFBF; }
+    color: #B6B6B4; }
 
 .like {
   padding-top: 20px;
@@ -209,10 +221,14 @@ input {
   background-color: #bfbfbf;
   border-radius: 50%;
   margin-bottom: 4px; }
+  .like__icon.like__icon_liked {
+    background-color: #83F3C6; }
 
 .like__counter {
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-family: "OpenSans-SemiBold", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px; }
 
 /* =====================================================
 *OBJECTS
