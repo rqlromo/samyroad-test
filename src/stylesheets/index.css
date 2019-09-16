@@ -105,6 +105,11 @@ input {
       .card:nth-child(odd) {
         margin-right: 9px; } }
 
+.card__content {
+  transition: all 500ms ease-out; }
+  .card__content:hover {
+    filter: grayscale(100%); }
+
 .card__image {
   display: block;
   width: 100%; }

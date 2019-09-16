@@ -16,6 +16,14 @@
   }
 }
 
+.card__content {
+  transition: all 500ms ease-out;
+
+  &:hover {
+    filter: grayscale(100%);
+  }
+}
+
 .card__image {
   display: block;
   width: 100%;
