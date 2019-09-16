@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 // icons
 import IconSearch from "../components/icons/iconSearch";
 
-const Search = ({ withIcon }) => {
+const Search = ({ withIcon, onChangeAction }) => {
   return (
     <form className="searchForm">
       <div className="searchForm__content">
@@ -18,6 +18,7 @@ const Search = ({ withIcon }) => {
           className="searchForm__input"
           type="text"
           placeholder="You're looking for something?"
+          onChange={(e) => onChangeAction(e)}
         />
       </div>
     </form>
@@ -27,5 +28,6 @@ const Search = ({ withIcon }) => {
 export default Search;
 
 Search.propTypes = {
-  withIcon: PropTypes.bool
+  withIcon: PropTypes.bool,
+  onChangeAction: PropTypes.func
 };
