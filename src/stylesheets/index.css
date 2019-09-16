@@ -209,6 +209,8 @@ input {
   background-color: #bfbfbf;
   border-radius: 50%;
   margin-bottom: 4px; }
+  .like__icon.like__icon_liked {
+    background-color: #83F3C6; }
 
 .like__counter {
   color: white;

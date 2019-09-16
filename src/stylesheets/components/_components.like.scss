@@ -14,6 +14,10 @@
   background-color: #bfbfbf;
   border-radius: 50%;
   margin-bottom: $sizeFour;
+
+  &.like__icon_liked {
+    background-color: $mint;
+  }
 }
 
 .like__counter {
