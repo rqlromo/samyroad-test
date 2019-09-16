@@ -5,7 +5,8 @@ exports[`Like renders properly 1`] = `
   className="like"
 >
   <div
-    className="like__icon liked"
+    className="like__icon like__icon_liked"
+    onClick={[Function]}
   >
     <svg
       height="24px"
@@ -20,7 +21,7 @@ exports[`Like renders properly 1`] = `
         strokeWidth="1"
       >
         <g
-          fill="#F0F0F0"
+          fill="#FFF"
           fillRule="nonzero"
           id="thumbs-up-hand-symbol"
         >
@@ -39,7 +40,7 @@ exports[`Like renders properly 1`] = `
   <p
     className="like__counter"
   >
-    4
+    5
   </p>
 </div>
 `;
