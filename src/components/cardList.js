@@ -1,21 +1,24 @@
 // Dependencies
 import React from "react";
+import PropTypes from "prop-types";
 
 // Components
 import Card from "./card";
 
-// Helpers
-import { fake_api } from "../helpers/api";
 
-const cardList = () => {
+const cardList = ({filteredData}) => {
   return (
     <main className="cardList">
-      {fake_api.data.length > 0 &&
-        fake_api.data.map((item, index) => {
+      {filteredData.length > 0 &&
+        filteredData.map((item, index) => {
           return <Card key={index} item={item} />;
         })}
     </main>
   );
+};
+
+cardList.propTypes = {
+  filteredData: PropTypes.array
 };
 
 export default cardList;
