@@ -134,9 +134,11 @@ input {
   flex: 1;
   background-color: #F0F0F0;
   padding: 24px 24px 6px; }
+  @media all and (min-width: 600px) {
+    .cardList {
+      padding: 40px 40px 22px; } }
   @media all and (min-width: 768px) {
     .cardList {
-      padding: 40px 40px 22px;
       display: flex;
       flex-wrap: wrap; } }
   @media all and (min-width: 1024px) {
