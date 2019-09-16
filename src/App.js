@@ -12,7 +12,10 @@ function App() {
 
   const _getFilteredValues = e => {
     let fake_api_filtered = fake_api.data.filter(element => {
-      return element.title.toLowerCase().includes(e.target.value.toLowerCase());
+      return (
+        element.title.toLowerCase().includes(e.target.value.toLowerCase()) ||
+        element.author.toLowerCase().includes(e.target.value.toLowerCase())
+      );
     });
 
     setFilteredData(fake_api_filtered);
