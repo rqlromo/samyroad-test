@@ -129,11 +129,11 @@ input {
   line-height: 16px; }
 
 .card__subtitle_light {
-  color: #BFBFBF; }
+  color: #B6B6B4; }
 
 .cardList {
   flex: 1;
-  background-color: #F0F0F0;
+  background-color: #F6F6F6;
   padding: 24px 24px 6px; }
   @media all and (min-width: 600px) {
     .cardList {
@@ -156,7 +156,7 @@ input {
 .searchForm__content {
   width: 270px;
   height: 30px;
-  background-color: #F0F0F0;
+  background-color: #F6F6F6;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -197,7 +197,7 @@ input {
   .searchForm__input::placeholder {
     font-size: 16px;
     line-height: 20px;
-    color: #BFBFBF; }
+    color: #B6B6B4; }
 
 .like {
   padding-top: 20px;
