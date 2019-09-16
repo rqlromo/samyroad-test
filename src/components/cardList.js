@@ -7,7 +7,7 @@ import Card from "./card";
 // Helpers
 import { fake_api } from "../helpers/api";
 
-class cardList extends React.Component {
+class CardList extends React.Component {
   render() {
     return (
       <main className="cardList">
@@ -20,4 +20,4 @@ class cardList extends React.Component {
   }
 }
 
-export default cardList;
+export default CardList;
