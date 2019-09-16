@@ -16,7 +16,7 @@ const Like = ({ likesCount, liked }) => {
       >
         <IconLike />
       </div>
-      <p className="like__counter">{likesCount}</p>
+      <p className="like__counter">{like ? likesCount + 1 : likesCount}</p>
     </div>
   );
 };
