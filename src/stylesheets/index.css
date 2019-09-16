@@ -148,7 +148,7 @@ input {
 
 .searchForm {
   margin: 0 auto; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 500px) {
     .searchForm {
       margin: initial; } }
 
@@ -172,14 +172,17 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media all and (min-width: 500px) {
+    .header {
+      padding: 0 30px;
+      height: 180px; } }
   @media all and (min-width: 768px) {
     .header {
-      padding: 0 80px;
-      height: 180px; } }
+      padding: 0 80px; } }
 
 .header__logo {
   display: none; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 500px) {
     .header__logo {
       display: block;
       width: 100px; } }
