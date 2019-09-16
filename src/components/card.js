@@ -6,9 +6,10 @@ import PropTypes from "prop-types";
 import Like from "../components/like";
 
 class Card extends React.Component {
-  render() {
-    const { author, title, main_attachment, likes_count } = this.props.item;
 
+  render() {    
+    const { author, title, main_attachment, likes_count } = this.props.item;
+    
     return (
       <div className="card">
         <div className="card__content">
