@@ -157,11 +157,11 @@ input {
   border-radius: 15px;
   display: flex;
   align-items: center;
-  padding-right: 16px; }
+  padding-right: 14px; }
 
 .searchForm__icon {
   height: 19px;
-  margin: 0 14px 0 10px; }
+  margin: 0 12px 0 10px; }
 
 .header {
   width: 100%;
@@ -186,7 +186,8 @@ input {
   width: 240px;
   height: 30px;
   background-color: transparent;
-  color: #3E3E40; }
+  color: #3E3E40;
+  font-size: 16px; }
   .searchForm__input::placeholder {
     font-size: 16px;
     line-height: 20px;
