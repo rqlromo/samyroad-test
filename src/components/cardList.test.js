@@ -8,7 +8,7 @@ import chaiEnzyme from 'chai-enzyme';
 chai.use(chaiEnzyme());
 
 describe("CardList", () => {
-  test.only("renders properly", () => {
+  xtest("renders properly", () => {
     const wrapper = shallow(<CardList/>);
     console.log('wrapper', wrapper);
 
