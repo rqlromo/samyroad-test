@@ -13,6 +13,6 @@ describe("CardList", () => {
     const wrapper = mount(<CardList filteredData={[cardMock, cardMock]} />);
     console.log("wrapper", wrapper);
 
-    expect(wrapper.find(".card").length).toBe(2);
+    expect(wrapper.find(Card).length).toBe(2);
   });
 });
