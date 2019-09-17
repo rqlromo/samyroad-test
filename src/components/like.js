@@ -8,11 +8,15 @@ import IconLike from "../components/icons/iconLike";
 const Like = ({ likesCount, liked }) => {
   const [like, setLike] = useState(liked);
 
+  const _setLike = () => {
+    setLike(!like)
+  }
+
   return (
     <div className="like">
       <div
         className={`like__icon ${like ? "like__icon_liked" : ""}`}
-        onClick={() => setLike(!like)}
+        onClick={() => _setLike()}
       >
         <IconLike />
       </div>
