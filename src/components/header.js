@@ -12,7 +12,7 @@ const Header = ({onChangeAction}) => {
   return (
     <header className="header">
       <img className="header__logo" src={logo} alt="company-logo" />
-      <Search withIcon={true} onChangeAction={(e) => onChangeAction(e)} />
+      <Search withIcon={true} onChangeAction={(value) => onChangeAction(value)} />
     </header>
   );
 };

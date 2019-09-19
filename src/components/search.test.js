@@ -24,7 +24,7 @@ describe("Search", () => {
     const spy = sinon.spy();
     const wrapper = shallow(<Search onChangeAction={spy} />);
 
-    wrapper.find(".searchForm__input").simulate("change");
+    wrapper.find(".searchForm__input").simulate("change", { target: { value: 'co' } });
 
     expect(spy.calledOnce).toBe(true);
   });

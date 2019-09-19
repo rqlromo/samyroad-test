@@ -18,7 +18,7 @@ const Search = ({ withIcon, onChangeAction }) => {
           className="searchForm__input"
           type="text"
           placeholder="You're looking for something?"
-          onChange={(e) => onChangeAction(e)}
+          onChange={(e) => onChangeAction(e.target.value)}
         />
       </div>
     </form>

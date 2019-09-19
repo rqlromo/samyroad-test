@@ -6,17 +6,14 @@ import CardList from "./components/cardList";
 
 // Helpers
 import { fake_api } from "./helpers/api";
+import { filterValue } from "./helpers/getFilteredValues";
 
 function App() {
   const [filteredData, setFilteredData] = useState(fake_api.data);
 
-  const _getFilteredValues = e => {
-    let fake_api_filtered = fake_api.data.filter(element => {
-      return (
-        element.title.toLowerCase().includes(e.target.value.toLowerCase()) ||
-        element.author.toLowerCase().includes(e.target.value.toLowerCase())
-      );
-    });
+  const _getFilteredValues = value => {
+    
+    let fake_api_filtered = filterValue(value);
 
     setFilteredData(fake_api_filtered);
   };
@@ -39,14 +36,14 @@ function App() {
       const offset = 50;
       // sadd windowHeight is neccessary to get to the bottom
       if (scrollTop + windowHeight > documentHeight - offset) {
-        console.log('bottom');
+        // console.log("bottom");
       }
     };
   }, []);
 
   return (
     <div className="mainPage">
-      <Header withIcon={true} onChangeAction={e => _getFilteredValues(e)} />
+      <Header withIcon={true} onChangeAction={value => _getFilteredValues(value)} />
       <CardList filteredData={filteredData} />
     </div>
   );
