@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "json-server": "^0.15.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -17,7 +18,8 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "json:server":"json-server --watch db.json"
   },
   "eslintConfig": {
     "extends": "react-app"
