@@ -5,17 +5,27 @@ import Header from "./components/header";
 import CardList from "./components/cardList";
 
 // Helpers
-import { fake_api } from "./helpers/api";
 import { filterValue } from "./helpers/getFilteredValues";
 
 function App() {
-  const [filteredData, setFilteredData] = useState(fake_api.data);
+  const [filteredData, setFilteredData] = useState([]);
 
   const _getFilteredValues = value => {
-    
     let fake_api_filtered = filterValue(value);
-
     setFilteredData(fake_api_filtered);
+  };
+
+  useEffect(() => {
+    getDataFromApi();
+  }, []);
+
+  const getDataFromApi = () => {
+    const url = "http://localhost:3000/data";
+    fetch(url)
+      .then(response => response.json())
+      .then(json => {
+        setFilteredData(json);
+      });
   };
 
   useEffect(() => {
@@ -43,7 +53,10 @@ function App() {
 
   return (
     <div className="mainPage">
-      <Header withIcon={true} onChangeAction={value => _getFilteredValues(value)} />
+      <Header
+        withIcon={true}
+        onChangeAction={value => _getFilteredValues(value)}
+      />
       <CardList filteredData={filteredData} />
     </div>
   );
