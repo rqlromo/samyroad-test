@@ -7,46 +7,70 @@ import CardList from "./components/cardList";
 // Helpers
 import { filterValue } from "./helpers/getFilteredValues";
 
+// Variables
+var blockScrollCall = false;
+var oldResponseJson = [];
+
 function App() {
+  const [dataFromApi, setDataFromApi] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
 
-  const _getFilteredValues = value => {
-    let fake_api_filtered = filterValue(value);
+  const _getFilteredValues = (value, dataFromApi) => {
+    let fake_api_filtered = filterValue(value, dataFromApi);
+
     setFilteredData(fake_api_filtered);
   };
 
-  useEffect(() => {
-    getDataFromApi();
-  }, []);
+  const success = responseJson => {
+    setDataFromApi(oldResponseJson.concat(responseJson));
+    blockScrollCall = true;
+    oldResponseJson = responseJson;
+  };
 
-  const getDataFromApi = () => {
-    const url = "http://localhost:3000/data";
+  const error = () => {
+    alert("error");
+  };
+
+  const getDataFromApi = page => {
+    blockScrollCall = false;
+
+    const url = "http://localhost:3000/data?_page=" + page + "&_limit=5";
     fetch(url)
-      .then(response => response.json())
-      .then(json => {
-        setFilteredData(json);
+      .then(response => {
+        if (response.ok) {
+          response.json().then(responseJson => {
+            success(responseJson);
+          });
+        } else {
+          error();
+        }
+      })
+      .catch(error => {
+        console.error(error);
       });
   };
 
   useEffect(() => {
+    let page = 1;
+    getDataFromApi(page);
+
     window.onscroll = function() {
-      // // How much the user has scrolled
+      // How much the user has scrolled
       const scrollTop = document.documentElement.scrollTop;
-      // console.log("scrollTop", scrollTop);
 
       // windowHeigth is the height of the window
       const windowHeight = window.innerHeight;
-      // console.log("windowHeight", windowHeight);
 
       // documentHeight could be larger than windowHeight
-      // const documentHeight = document.height();
       const documentHeight = document.documentElement.scrollHeight;
-      // console.log("documentHeight", documentHeight);
 
       const offset = 50;
-      // sadd windowHeight is neccessary to get to the bottom
+
       if (scrollTop + windowHeight > documentHeight - offset) {
-        // console.log("bottom");
+        if (page < 2 && blockScrollCall) {
+          page = page + 1;
+          getDataFromApi(page);
+        }
       }
     };
   }, []);
@@ -55,9 +79,9 @@ function App() {
     <div className="mainPage">
       <Header
         withIcon={true}
-        onChangeAction={value => _getFilteredValues(value)}
+        onChangeAction={value => _getFilteredValues(value, dataFromApi)}
       />
-      <CardList filteredData={filteredData} />
+      <CardList filteredData={dataFromApi} />
     </div>
   );
 }
