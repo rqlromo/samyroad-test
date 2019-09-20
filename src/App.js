@@ -19,6 +19,12 @@ function App() {
     setInputValue(value);
   };
 
+  const notRefreshOnPressEnter = e => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+    }
+  };
+
   const success = responseJson => {
     setDataFromApi(oldResponseJson.concat(responseJson));
     blockScrollCall = true;
@@ -78,6 +84,7 @@ function App() {
       <Header
         withIcon={true}
         onChangeAction={value => changeInputValue(value)}
+        onKeyDownAction={e => notRefreshOnPressEnter(e)}
       />
       <CardList
         filteredData={
