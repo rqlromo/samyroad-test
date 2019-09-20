@@ -10,11 +10,7 @@ exports[`Card renders properly 1`] = `
     <img
       alt="product"
       className="card__image"
-      src={
-        Object {
-          "process": [Function],
-        }
-      }
+      src=""
     />
   </div>
   <div
@@ -40,7 +36,7 @@ exports[`Card renders properly 1`] = `
     className="like"
   >
     <div
-      className="like__icon "
+      className="like__icon like__icon_liked"
       onClick={[Function]}
     >
       <svg
@@ -75,7 +71,7 @@ exports[`Card renders properly 1`] = `
     <p
       className="like__counter"
     >
-      5
+      6
     </p>
   </div>
 </div>

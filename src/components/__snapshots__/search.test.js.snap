@@ -38,6 +38,7 @@ exports[`Search renders properly 1`] = `
     <input
       className="searchForm__input"
       onChange={[Function]}
+      onKeyDown={[Function]}
       placeholder="You're looking for something?"
       type="text"
     />
