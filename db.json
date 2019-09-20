@@ -60,8 +60,8 @@
         "big": "image3",
         "small": "http://lorempixel.com/100/125/"
       },
-      "likes_count": 5,
-      "liked": true,
+      "likes_count": 9,
+      "liked": false,
       "links": [
         {
           "rel": "avatar",
@@ -111,7 +111,7 @@
         "small": "http://lorempixel.com/100/125/"
       },
       "likes_count": 7,
-      "liked": true,
+      "liked": false,
       "links": [
         {
           "rel": "avatar",
@@ -160,8 +160,8 @@
         "big": "image7",
         "small": "http://lorempixel.com/100/125/"
       },
-      "likes_count": 5,
-      "liked": true,
+      "likes_count": 15,
+      "liked": false,
       "links": [
         {
           "rel": "avatar",
