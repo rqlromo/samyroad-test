@@ -1,12 +1,9 @@
-// Helpers
-import { fake_api } from "./api";
-
-export const filterValue = value => {
-  let fake_api_filtered = fake_api.data.filter(element => {
+export const filterValue = (inputValue, dataFromApi) => {
+  let dataFiltered = dataFromApi.filter(element => {
     return (
-      element.title.toLowerCase().includes(value.toLowerCase()) ||
-      element.author.toLowerCase().includes(value.toLowerCase())
+      element.title.toLowerCase().includes(inputValue.toLowerCase()) ||
+      element.author.toLowerCase().includes(inputValue.toLowerCase())
     );
   });
-  return fake_api_filtered;
+  return dataFiltered;
 };

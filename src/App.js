@@ -13,12 +13,10 @@ var oldResponseJson = [];
 
 function App() {
   const [dataFromApi, setDataFromApi] = useState([]);
-  const [filteredData, setFilteredData] = useState([]);
+  const [inputValue, setInputValue] = useState("");
 
-  const _getFilteredValues = (value, dataFromApi) => {
-    let fake_api_filtered = filterValue(value, dataFromApi);
-
-    setFilteredData(fake_api_filtered);
+  const changeInputValue = value => {
+    setInputValue(value);
   };
 
   const success = responseJson => {
@@ -79,9 +77,13 @@ function App() {
     <div className="mainPage">
       <Header
         withIcon={true}
-        onChangeAction={value => _getFilteredValues(value, dataFromApi)}
+        onChangeAction={value => changeInputValue(value)}
       />
-      <CardList filteredData={dataFromApi} />
+      <CardList
+        filteredData={
+          !inputValue ? dataFromApi : filterValue(inputValue, dataFromApi)
+        }
+      />
     </div>
   );
 }
