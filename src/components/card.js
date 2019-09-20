@@ -2,16 +2,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import imagen from "../images/recurso4.png";
+
 // Components
 import Like from "../components/like";
 
 const Card = ({ item }) => {
-  const { author, title, main_attachment, likes_count } = item;
+  const { author, title, main_attachment, liked, likes_count } = item;
 
   return (
     <div className="card">
       <div className="card__content">
-        <img className="card__image" src={main_attachment.big} alt="product" />
+        <img className="card__image" src={imagen} alt="product" />
       </div>
       <div className="card__footer">
         <p className="card__title">{title}</p>
@@ -20,7 +22,7 @@ const Card = ({ item }) => {
           {author}
         </p>
       </div>
-      <Like likesCount={likes_count} />
+      <Like liked={liked} likesCount={likes_count} />
     </div>
   );
 };
