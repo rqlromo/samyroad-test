@@ -7,7 +7,7 @@
       "author": "stylefresh",
       "created_at": "2012-12-12T21: 08: 20Z",
       "main_attachment": {
-        "big": "/src/images/recurso1.png",
+        "big": "http://localhost:3000/assets/images/recurso1.png",
         "small": "http://lorempixel.com/100/125/"
       },
       "likes_count": 5,
@@ -32,7 +32,7 @@
       "author": "brush",
       "created_at": "2012-12-12T21: 08: 20Z",
       "main_attachment": {
-        "big": "image2",
+        "big": "http://localhost:3000/assets/images/recurso2.png",
         "small": "http://lorempixel.com/100/125/"
       },
       "likes_count": 5,
@@ -57,7 +57,7 @@
       "author": "piclovers",
       "created_at": "2012-12-12T21: 08: 20Z",
       "main_attachment": {
-        "big": "image3",
+        "big": "http://localhost:3000/assets/images/recurso3.png",
         "small": "http://lorempixel.com/100/125/"
       },
       "likes_count": 9,
@@ -82,7 +82,7 @@
       "author": "underground",
       "created_at": "2012-12-12T21: 08: 20Z",
       "main_attachment": {
-        "big": "image4",
+        "big": "http://localhost:3000/assets/images/recurso4.png",
         "small": "http://lorempixel.com/100/125/"
       },
       "likes_count": 5,
@@ -107,7 +107,7 @@
       "author": "easycover",
       "created_at": "2012-12-12T21: 08: 20Z",
       "main_attachment": {
-        "big": "image5",
+        "big": "http://localhost:3000/assets/images/recurso5.png",
         "small": "http://lorempixel.com/100/125/"
       },
       "likes_count": 7,
@@ -132,7 +132,7 @@
       "author": "dulceida",
       "created_at": "2012-12-12T21: 08: 20Z",
       "main_attachment": {
-        "big": "image6",
+        "big": "http://localhost:3000/assets/images/recurso6.png",
         "small": "http://lorempixel.com/100/125/"
       },
       "likes_count": 26,
@@ -157,7 +157,7 @@
       "author": "moretalent",
       "created_at": "2012-12-12T21: 08: 20Z",
       "main_attachment": {
-        "big": "image7",
+        "big": "http://localhost:3000/assets/images/recurso7.png",
         "small": "http://lorempixel.com/100/125/"
       },
       "likes_count": 15,
@@ -182,7 +182,7 @@
       "author": "m_onday",
       "created_at": "2012-12-12T21: 08: 20Z",
       "main_attachment": {
-        "big": "image8",
+        "big": "http://localhost:3000/assets/images/recurso8.png",
         "small": "http://lorempixel.com/100/125/"
       },
       "likes_count": 5,
@@ -207,7 +207,7 @@
       "author": "cerealmagazine",
       "created_at": "2012-12-12T21: 08: 20Z",
       "main_attachment": {
-        "big": "image9",
+        "big": "http://localhost:3000/assets/images/recurso9.png",
         "small": "http://lorempixel.com/100/125/"
       },
       "likes_count": 5,
@@ -232,7 +232,7 @@
       "author": "archit_c",
       "created_at": "2012-12-12T21: 08: 20Z",
       "main_attachment": {
-        "big": "image10",
+        "big": "http://localhost:3000/assets/images/recurso10.png",
         "small": "http://lorempixel.com/100/125/"
       },
       "likes_count": 5,
