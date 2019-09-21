@@ -19,8 +19,9 @@
     "build": "npm-run-all build-css build-js",
     "test": "jest",
     "eject": "react-scripts eject",
-    "json:server":"json-server --watch db.json"
+    "json:server": "json-server --watch db.json"
   },
+  "homepage": "./",
   "eslintConfig": {
     "extends": "react-app"
   },

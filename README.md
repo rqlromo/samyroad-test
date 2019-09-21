@@ -1,16 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto ha sido creado con [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Pasos para descargar y arrancar el proyecto
 
-In the project directory, you can run:
 
-### `npm start`
+### Primero clonamos el proyecto `git clone`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Primero clonamos el proyecto en la carpeta que deseemos:
+git clone [https://github.com/rqlromo/samyroad-test.git](https://github.com/rqlromo/samyroad-test.git).
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+
+### Despues realizamos `npm install`
+
+Hacemos un npm install para que se instale el proyecto con todas sus dependencias.
+
+
 
 ### `npm test`
 
