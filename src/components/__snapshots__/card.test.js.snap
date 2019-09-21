@@ -10,7 +10,11 @@ exports[`Card renders properly 1`] = `
     <img
       alt="product"
       className="card__image"
-      src=""
+      src={
+        Object {
+          "process": [Function],
+        }
+      }
     />
   </div>
   <div

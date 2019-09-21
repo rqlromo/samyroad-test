@@ -20,7 +20,7 @@ exports[`App renders properly 1`] = `
       className="searchForm"
     >
       <div
-        className="searchForm__content"
+        className="searchForm__content "
       >
         <div
           className="searchForm__icon"
@@ -52,7 +52,9 @@ exports[`App renders properly 1`] = `
         </div>
         <input
           className="searchForm__input"
+          onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           onKeyDown={[Function]}
           placeholder="You're looking for something?"
           type="text"
