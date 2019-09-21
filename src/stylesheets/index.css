@@ -166,6 +166,8 @@ input {
   display: flex;
   align-items: center;
   padding-right: 14px; }
+  .searchForm__content.focus {
+    box-shadow: 0 0 4px 1px rgba(62, 62, 64, 0.5); }
 
 .searchForm__icon {
   height: 19px;

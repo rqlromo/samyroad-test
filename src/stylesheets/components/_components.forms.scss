@@ -13,6 +13,10 @@
   border-radius: 15px;
   @include flex-row-vertically-centered;
   padding-right: $sizeFourteen;
+
+  &.focus {
+    box-shadow: 0 0 4px 1px rgba(62, 62, 64, 0.5);
+  }
 }
 
 .searchForm__icon {
