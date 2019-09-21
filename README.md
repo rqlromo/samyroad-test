@@ -2,70 +2,35 @@ Este proyecto ha sido creado con [Create React App](https://github.com/facebook/
 
 ## Pasos para descargar y arrancar el proyecto
 
-
 ### Primero clonamos el proyecto `git clone`
 
 Primero clonamos el proyecto en la carpeta que deseemos:
 git clone [https://github.com/rqlromo/samyroad-test.git](https://github.com/rqlromo/samyroad-test.git).
 
-
 ### Despues realizamos `npm install`
 
-Hacemos un npm install para que se instale el proyecto con todas sus dependencias.
+Hacemos un `npm install` para que se instale el proyecto con todas sus dependencias.
 
+### A continuación arrancamos el json-Server con `npm run json:server`
 
+Una vez instalado arrancamos nuestro json server para poder simular el comportamiento de la api, con el comando `npm run json:server`.
 
-### `npm test`
+### Por ultimo arrancamos el proyecto con `npm start`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para arrancar el proyecto hacemos `npm start`, esto nos arrancara nuestro proyecto en el puerto 3006.
 
-### `npm run build`
+### Lanzar test con `npm test`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para poder lanzar los test que comprueban el buen funcionamiento de la aplicación ejecutaremos `npm test`.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Explicación del proyecto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+En este proyecto lo que se ha hecho es recoger los datos de un endpoint que se ha simulado con json-server.
 
-### `npm run eject`
+Estos datos se recogen y se pintan segun el diseño proporcionado, el diseño es responsive según especificaciones.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Cuando cargamos las imagenes, solo cargamos las 5 primeras hasta que llegamos al final de la página y se pintan las 5 siguientes, esto es posible gracias a un scroll infinito que detecta cuando hemos llegado al final de la página y hace otra petición al servidor para que nos traiga las 5 siguientes.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+En esta visualización de las imágenes podemos dar a "me gusta" a las imagenes que mas nos gusten y si no nos gustan podemos quitarle el like, tambien se actualiza el contador de likes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Ademas tenemos un buscador que filtra las imagenes por titulo y por autor.
