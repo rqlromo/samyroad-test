@@ -38,7 +38,7 @@ function App() {
   const getDataFromApi = page => {
     blockScrollCall = false;
 
-    const url = "https://localhost:3000/data?_page=" + page + "&_limit=5";
+    const url = "http://localhost:3000/data?_page=" + page + "&_limit=5";
     fetch(url)
       .then(response => {
         if (response.ok) {
