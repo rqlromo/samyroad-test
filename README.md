@@ -9,7 +9,7 @@ git clone [https://github.com/rqlromo/samyroad-test.git](https://github.com/rqlr
 
 ### Despues realizamos `npm install`
 
-Hacemos un `npm install` para que se instale el proyecto con todas sus dependencias.
+Entramos en la carpeta del proyecto que acabamos de clonar y hacemos un `npm install` para que se instale el proyecto con todas sus dependencias.
 
 ### A continuación arrancamos el json-Server con `npm run json:server`
 
